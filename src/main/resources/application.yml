@@ -1,0 +1,12 @@
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+influxdb:
+  url: ${DATABASE_URL:http://127.0.0.1:8086}
+  username: ${DATABASE_USERNAME:username}
+  password: ${DATABASE_PASSWORD:password}
+  database: ${DATABASE_NAME:database}
+  create-database: true
